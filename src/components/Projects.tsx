@@ -8,6 +8,8 @@ const Projects = () => {
       description: "A fully functional online shopping platform with user authentication, product filtering, sorting, pagination, and an admin panel for inventory management.",
       tech: ["React", "Node.js", "Express.js", "MongoDB", "CSS"],
       date: "July 2025",
+      liveLink:"ecommerce-lfkpf28r7-vipul-kumars-projects-847783cc.vercel.app",
+      gitlink:"https://github.com/Vipul123kumar/Ecommerce",
       gradient: "from-purple-500/20 to-pink-500/20"
     },
     {
@@ -15,6 +17,8 @@ const Projects = () => {
       description: "Responsive food recipe website allowing users to browse and filter recipes with clean layout, intuitive navigation, and cross-browser compatibility.",
       tech: ["React", "Node.js", "Express.js", "MongoDB"],
       date: "May 2025",
+        liveLink:"https://food-recipi.vercel.app/",
+      gitlink:"https://github.com/Vipul123kumar/Food-Recipi",
       gradient: "from-orange-500/20 to-red-500/20"
     },
     {
@@ -22,6 +26,8 @@ const Projects = () => {
       description: "Interactive web app that fetches random meme templates from API with text overlay feature for custom top and bottom text positioning.",
       tech: ["React", "JavaScript", "CSS", "REST API"],
       date: "June 2025",
+      liveLink:" ",
+      gitlink:" ",
       gradient: "from-green-500/20 to-teal-500/20"
     },
     {
@@ -29,6 +35,8 @@ const Projects = () => {
       description: "Interactive platform powered by advanced AI to answer user queries quickly and accurately with a user-friendly interface.",
       tech: ["React", "Tailwind CSS", "JavaScript", "Gemini API"],
       date: "April 2025",
+        liveLink:" ",
+      gitlink:"https://github.com/Vipul123kumar/Gemini-",
       gradient: "from-blue-500/20 to-cyan-500/20"
     }
   ];
@@ -66,10 +74,16 @@ const Projects = () => {
                 <div className="absolute bottom-4 left-6 right-6 flex justify-between items-end">
                   <span className="text-sm font-mono text-primary">{project.date}</span>
                   <div className="flex gap-2">
-                    <button className="p-2 glass-card rounded-lg hover:bg-primary/20 transition-colors">
+                    <button
+                      type="button"
+                      onClick={() => window.open(project.gitlink, "_blank")}
+                    className="p-2 glass-card rounded-lg hover:bg-primary/20 transition-colors">
                       <Github className="w-4 h-4" />
                     </button>
-                    <button className="p-2 glass-card rounded-lg hover:bg-primary/20 transition-colors">
+                    <button
+                      type="button"
+                      onClick={() => window.open(project.liveLink, "_blank")}
+                    className="p-2 glass-card rounded-lg hover:bg-primary/20 transition-colors">
                       <ExternalLink className="w-4 h-4" />
                     </button>
                   </div>
